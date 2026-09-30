@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact BrightSide Cleaners | Free Quote in Nairobi</title>
+<meta name="description" content="Request a free cleaning quote from BrightSide Cleaners in Nairobi. Send your request straight to our WhatsApp, call us, or email.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+</head>
+<body>
+
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="brand" aria-label="BrightSide Cleaners home">
+      <img class="brand-mark" src="images/logo.png" alt="BrightSide Cleaners logo"><span>BrightSide</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+     <li class="has-dropdown">
+  <a href="services.html" class="dropdown-trigger">Services</a>
+  <button type="button" class="dropdown-toggle" aria-expanded="false" aria-controls="service-dropdown" aria-label="Toggle services menu">
+    <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+      <path d="M2 4.5L6 8.5L10 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  <ul class="service-dropdown" id="service-dropdown">
+    <li><a href="services.html#residential">Residential Cleaning</a></li>
+    <li><a href="services.html#office">Office Cleaning</a></li>
+    <li><a href="services.html#residential-apartments">Residential Apartment Common Areas</a></li>
+    <li><a href="services.html#commercial-common-areas">Commercial Building Common Areas</a></li>
+    <li><a href="services.html#pool-gym">Pool &amp; Gym Cleaning</a></li>
+    <li><a href="services.html#waste-management">Waste Management</a></li>
+    <li><a href="services.html#fumigation">Fumigation &amp; Pest Control</a></li>
+    <li><a href="services.html#specialised">Specialised Services</a></li>
+  </ul>
+</li>
+      <li><a href="specialised.html">Specialised</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li class="whatsapp-nav"><a href="https://wa.me/254710537132" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  
+  <section class="ct-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="index.html">Home</a> / Contact</p>
+      <h1>Let's talk about your space.</h1>
+      <p>Tell us what needs cleaning and we'll reply on WhatsApp with a plan and a quote. No obligation.</p>
+      <div class="ct-quick">
+        <a class="btn btn-wa" href="https://wa.me/254710537132" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:0710537132"><i class="fas fa-phone"></i> Call 0710 537 132</a>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="ct-main reveal">
+    <div class="wrap ct-grid">
+
+      <form class="ct-form" id="ticketForm" novalidate>
+        <h2>Request a free quote</h2>
+        <p>Fill this in and we'll open WhatsApp with your request ready to send.</p>
+
+        <fieldset>
+          <legend>What do you need cleaned?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="service" value="Residential cleaning" checked><span>Home</span></label>
+            <label class="chip"><input type="radio" name="service" value="Office cleaning"><span>Office</span></label>
+            <label class="chip"><input type="radio" name="service" value="Apartment / building common areas"><span>Apartment block</span></label>
+            <label class="chip"><input type="radio" name="service" value="Post-construction cleaning"><span>Post-construction</span></label>
+            <label class="chip"><input type="radio" name="service" value="High-rise window cleaning"><span>High-rise windows</span></label>
+            <label class="chip"><input type="radio" name="service" value="Upholstery, mattress or carpet care"><span>Upholstery &amp; carpets</span></label>
+            <label class="chip"><input type="radio" name="service" value="Fumigation"><span>Fumigation</span></label>
+          </div>
+        </fieldset>
+
+        <div class="form-row two">
+          <div>
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Wanjiku" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" placeholder="07xx xxx xxx" autocomplete="tel" required>
+          </div>
+        </div>
+        <div class="form-row two">
+          <div>
+            <label for="area">Location</label>
+            <input id="area" name="area" type="text" placeholder="e.g. Kilimani, Nairobi" required>
+          </div>
+          <div>
+            <label for="date">Preferred date (optional)</label>
+            <input id="date" name="date" type="date">
+          </div>
+        </div>
+        <div class="pin-block" id="pinBlock">
+          <div class="pin-head">
+            <span class="pin-label">Drop a pin for the exact spot (optional)</span>
+            <div class="pin-actions">
+              <button type="button" class="pin-btn" id="pinLocate"><i class="fas fa-location-crosshairs"></i> Use my location</button>
+              <button type="button" class="pin-btn" id="pinClear">Clear</button>
+            </div>
+          </div>
+          <div id="pinMap" class="pin-map" role="application" aria-label="Map. Tap to drop a pin at your exact location."></div>
+          <p class="form-note" id="pinStatus" aria-live="polite">Tap the map to mark the spot, or use your current location.</p>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" name="message" placeholder="Size of space, how often, access details"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-wa ct-send"><i class="fab fa-whatsapp"></i> Send request on WhatsApp</button>
+        <p class="form-note" id="ticketStatus" role="status" aria-live="polite">Your request goes straight to our WhatsApp. You'll just tap send.</p>
+      </form>
+
+      <aside class="ct-side">
+        <div class="ct-card">
+          <h3>Prefer to reach us directly?</h3>
+          <ul class="ct-links">
+            <li>
+              <span class="ct-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5c0 8.3 6.7 15 15 15l2-4-5-2-1.5 2C11.5 14.5 9.5 12.5 8 10.5L10 9 8 4 4 5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+              <a href="tel:0710537132">0710 537 132</a>
+            </li>
+            <li>
+              <span class="ct-ico"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m3.5 6 8.5 7 8.5-7" stroke="currentColor" stroke-width="1.6"/></svg></span>
+              <a href="mailto:brightsidecleaningltd@gmail.com">brightsidecleaningltd@gmail.com</a>
+            </li>
+            <li>
+              <span class="ct-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5-7-11a7 7 0 1 1 14 0c0 6-7 11-7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg></span>
+              <span>Kileleshwa, Nairobi, Kenya</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="ct-card">
+          <h3>What happens next</h3>
+          <ol class="ct-steps">
+            <li>You send your request on WhatsApp.</li>
+            <li>We review the details and may ask a few questions.</li>
+            <li>You get a clear quote within one business day, sooner for urgent jobs.</li>
+          </ol>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+
+  <section class="partners reveal">
+  <div class="wrap">
+    <p class="eyebrow">Our clients &amp; partners</p><h2>Trusted by organisations we've worked with.</h2>
+    <p class="section-intro">A selection of client and partner brands represented by the supplied BrightSide assets.</p>
+    <div class="logo-grid">
+      <div class="client-logo"><img src="images/mola.PNG" alt="Mola Kimosop"></div>
+      <div class="client-logo"><img src="images/nd.PNG" alt="Neighborhood Declutter"></div>
+      <div class="client-logo"><img src="images/NH.PNG" alt="Neighbourhood Declutter"></div>
+      <div class="client-logo"><img src="images/tifa.PNG" alt="TIFA Research"></div>
+      <div class="client-logo image-wide"><img src="images/sting.PNG" alt="Sting"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img class="brand-mark" src="images/logo.png" alt="BrightSide Cleaners logo">
+        </div>
+        <p style="color:rgba(255,255,255,0.6);max-width:32ch;margin-top:0.9rem;font-size:0.92rem;">Professional cleaning services in homes, offices, apartments and specialised jobs alike.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="specialised.html">Specialised</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:0710537132">0710 537 132</a></li>
+            <li><a href="mailto:brightsidecleaningltd@gmail.com">brightsidecleaningltd@gmail.com</a></li>
+            <li>Kileleshwa, Nairobi</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> BrightSide Cleaners. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+/* Turns the form into a ticket and opens it in WhatsApp */
+(function(){
+  var WA_NUMBER = "254710537132";
+  var form = document.getElementById("ticketForm");
+  var status = document.getElementById("ticketStatus");
+  var dateInput = document.getElementById("date");
+  if(!form) return;
+
+  /* ---- Pin drop map ---- */
+  var pin = null, marker = null, map = null;
+  var pinStatus = document.getElementById("pinStatus");
+  if(window.L && document.getElementById("pinMap")){
+    map = L.map("pinMap", { scrollWheelZoom: false }).setView([-1.2864, 36.8172], 12); /* Nairobi */
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: "&copy; OpenStreetMap contributors"
+    }).addTo(map);
+    var pinIcon = L.divIcon({ className: "ct-pin-wrap", html: '<span class="ct-pin"></span>', iconSize: [26, 26], iconAnchor: [13, 26] });
+
+    var setPin = function(lat, lng, zoomIn){
+      pin = { lat: lat, lng: lng };
+      if(!marker){
+        marker = L.marker([lat, lng], { icon: pinIcon, draggable: true }).addTo(map);
+        marker.on("dragend", function(){ var p = marker.getLatLng(); pin = { lat: p.lat, lng: p.lng }; });
+      } else {
+        marker.setLatLng([lat, lng]);
+      }
+      if(zoomIn){ map.setView([lat, lng], Math.max(map.getZoom(), 16)); }
+      pinStatus.textContent = "Pin dropped. Drag it to fine-tune.";
+    };
+
+    map.on("click", function(ev){ setPin(ev.latlng.lat, ev.latlng.lng, false); });
+
+    document.getElementById("pinLocate").addEventListener("click", function(){
+      if(!navigator.geolocation){ pinStatus.textContent = "Your browser can't share location. Tap the map to drop a pin instead."; return; }
+      pinStatus.textContent = "Finding your location...";
+      navigator.geolocation.getCurrentPosition(
+        function(p){ setPin(p.coords.latitude, p.coords.longitude, true); },
+        function(){ pinStatus.textContent = "Couldn't get your location. Tap the map to drop a pin instead."; },
+        { enableHighAccuracy: true, timeout: 10000 }
+      );
+    });
+
+    document.getElementById("pinClear").addEventListener("click", function(){
+      if(marker){ map.removeLayer(marker); marker = null; }
+      pin = null;
+      pinStatus.textContent = "Pin cleared. Tap the map to drop a new one.";
+    });
+  } else {
+    document.getElementById("pinBlock").hidden = true; /* map library didn't load */
+  }
+
+  function pad(n){ return n < 10 ? "0" + n : "" + n; }
+  var now = new Date();
+  if(dateInput){ dateInput.min = now.getFullYear() + "-" + pad(now.getMonth()+1) + "-" + pad(now.getDate()); }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+
+    var f = new FormData(form);
+    var d = new Date();
+    var ref = "BS-" + String(d.getFullYear()).slice(2) + pad(d.getMonth()+1) + pad(d.getDate()) + "-" + Math.floor(1000 + Math.random() * 9000);
+
+    var lines = [
+      "*New quote request* (" + ref + ")",
+      "",
+      "Service: " + f.get("service"),
+      "Name: " + f.get("name").trim(),
+      "Phone: " + f.get("phone").trim(),
+      "Location: " + f.get("area").trim()
+    ];
+    if(pin){ lines.push("Pin: https://www.google.com/maps?q=" + pin.lat.toFixed(6) + "," + pin.lng.toFixed(6)); }
+    if(f.get("date")){
+      var when = new Date(f.get("date") + "T00:00:00");
+      lines.push("Preferred date: " + when.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }));
+    }
+    if(f.get("message").trim()){ lines.push("Details: " + f.get("message").trim()); }
+
+    var url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
+    var w = window.open(url, "_blank");
+    if(!w){ window.location.href = url; }
+
+    status.textContent = "Ticket " + ref + " is ready. Tap send in WhatsApp to submit it. If WhatsApp didn't open, ";
+    var a = document.createElement("a");
+    a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer";
+    a.textContent = "tap here";
+    a.style.cssText = "color:var(--teal-deep);font-weight:600;text-decoration:underline;";
+    status.appendChild(a);
+    status.appendChild(document.createTextNode("."));
+  });
+})();
+</script>
+</body>
+</html>
