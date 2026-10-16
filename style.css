@@ -1062,3 +1062,85 @@ footer{
  .service-detail-image>img{height:280px}
  .waste-visual,.waste-visual img{min-height:300px}
 }
+
+
+/* ===== Navy sections -> --line background, with dark text ===== */
+.icon-card,
+.quote-banner,
+.specialized,
+.cta-banner,
+.ct-hero,
+.featured-service,
+.coverage,
+.mission-vision,
+.services-hero,
+.waste-section,
+footer{
+  background: var(--line);
+}
+
+/* Headings and body text on those sections */
+.icon-card h3, .quote-inner h2, .specialized h2, .zig-text h3,
+.cta-banner h2, .ct-hero h1, .featured-service h3, .coverage h2,
+.coverage h3, .services-hero h1, .waste-copy h2, .waste-points h3,
+.footer-brand, .footer-links h4{
+  color: var(--navy);
+}
+
+.icon-card p, .quote-inner p, .specialized > .wrap > p, .zig-text p,
+.cta-banner p, .ct-hero p, .featured-service p, .featured-service b,
+.coverage p, .services-hero .lead, .waste-copy > p, .waste-points p,
+.footer-links a, .footer-bottom, footer p{
+  color: var(--ink-soft);
+}
+
+/* Small accent labels (were yellow on navy) */
+.specialized .eyebrow, .ct-hero .crumb, .services-hero .eyebrow,
+.featured-service .service-number, .waste-copy .service-tag{
+  color: var(--teal-deep);
+}
+.ct-hero .crumb a{ color: var(--ink-soft); }
+
+/* Pills, outlines and panels */
+.area-pills span{ border-color: rgba(20,36,56,.25); color: var(--navy); }
+.coverage-panel{ border-color: rgba(20,36,56,.15); background: rgba(255,255,255,.55); }
+.coverage-panel > i, .waste-points i{ color: var(--teal-dark); }
+.waste-points > div{ border-color: rgba(20,36,56,.15); background: rgba(255,255,255,.55); }
+.hero-service-links a{ border-color: rgba(20,36,56,.3); color: var(--navy); }
+.hero-service-links a:hover, .footer-links a:hover{ color: var(--teal-dark); border-color: var(--teal-dark); }
+.ct-hero .btn-ghost{ border-color: rgba(20,36,56,.4); color: var(--navy); }
+.ct-hero .btn-ghost:hover{ border-color: var(--teal-dark); color: var(--teal-dark); }
+.footer-top{ border-bottom-color: rgba(20,36,56,.15); }
+
+/* Footer text -> black */
+footer,
+footer p,
+footer span,
+footer li,
+footer small,
+footer a,
+footer h3,
+footer h4,
+.footer-brand,
+.footer-links h4,
+.footer-links a,
+.footer-bottom,
+.footer-bottom a,
+.footer-bottom span{
+  color: #000;
+}
+
+.footer-links a:hover,
+.footer-bottom a:hover{
+  color: var(--teal-dark);
+}
+
+/* Footer tagline + all footer text -> black */
+footer p,
+footer .footer-top p,
+footer .footer-brand + p,
+footer [class*="footer"] p,
+footer [class*="desc"],
+footer [class*="tagline"]{
+  color: #000 !important;
+}
